@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Prism AI: Solve On Your Screen</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --border: #30363d;
+      --tag-bg: rgba(56, 139, 253, 0.15);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f8fa;
+        --card-bg: #ffffff;
+        --text: #1f2328;
+        --text-muted: #656d76;
+        --accent: #0969da;
+        --border: #d0d7de;
+        --tag-bg: rgba(9, 105, 218, 0.1);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 40px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 28px 0 12px;
+      color: var(--accent);
+    }
+    p, ul {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: var(--text);
+    }
+    .callout {
+      background: var(--tag-bg);
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 36px;
+      padding-top: 20px;
+      font-size: 14px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Official Legal Document</div>
+      <h1>Privacy Policy for Prism AI</h1>
+      <p class="meta"><strong>Application:</strong> Prism AI (Prism: Solve On Your Screen) &nbsp;|&nbsp; <strong>Effective Date:</strong> November 20, 2026</p>
+    </header>
+
+    <div class="callout">
+      <strong>Core Privacy Promise:</strong> Prism AI only scans your screen when you deliberately tap the floating solve button. It does not record your screen continuously, does not run background surveillance, and never sells your personal data.
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how <strong>Prism AI</strong> ("we", "us", or "our") collects, uses, and safeguards information when you use our Android application. We are committed to maintaining the privacy and security of your personal information in compliance with the Google Play Developer Policy.</p>
+
+    <h2>2. Information We Process & How It Is Used</h2>
+    <ul>
+      <li><strong>On-Demand Screen Content:</strong> When you tap the floating overlay bubble or action button to solve a question, the app captures an image of the user-designated region of your screen. This capture is processed solely to extract question text and answer options (via on-device OCR) and provide relevant study solutions. Screen capture ceases immediately after the question is captured.</li>
+      <li><strong>Text Queries Sent to AI Providers:</strong> Extracted question text is transmitted securely over HTTPS to edge AI reasoning services (such as Cloudflare Workers AI edge models or Google Gemini) to retrieve the correct answer, options, and explanations. These queries contain only academic question text and contain no personal identifiers, contact details, or passwords.</li>
+      <li><strong>Offline Study History:</strong> Solved questions, answer choices, and explanations are stored locally on your device in a private offline database so you can review questions offline. This data stays on your physical device and is not synced to third-party marketing servers. You can clear your study history at any time from the app settings.</li>
+    </ul>
+
+    <h2>3. Permissions Used by the App</h2>
+    <ul>
+      <li><strong>Foreground Service (Media Projection):</strong> Required strictly while the floating lens is active to capture the question area on your screen when you tap the solve button.</li>
+      <li><strong>System Alert Window (Draw Over Other Apps):</strong> Used to display the lightweight floating bubble/island overlay on your screen so you can solve study questions without switching applications.</li>
+      <li><strong>Internet Permission:</strong> Required to query AI reasoning endpoints to generate answers and to fetch optional application updates.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>Our application integrates trusted third-party services that process minimal technical diagnostic data in accordance with their respective privacy policies:</p>
+    <ul>
+      <li><strong>Cloudflare Workers AI:</strong> Used to run high-speed, serverless inference models for question analysis. (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a>)</li>
+      <li><strong>Google Play Services & Firebase:</strong> Used for app integrity verification (App Check) and anonymized crash reporting (Crashlytics) to ensure app stability. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
+      <li><strong>Google AdMob:</strong> May display non-intrusive advertisements to support the free tier. AdMob utilizes standard anonymized advertising identifiers compliant with Google Play policies.</li>
+    </ul>
+
+    <h2>5. Data Retention & Deletion</h2>
+    <p>All saved study questions and history are stored locally on your device. You can permanently delete this data at any time by:</p>
+    <ul>
+      <li>Clearing history inside the app under <em>Settings &gt; History &amp; Offline Cache &gt; Clear Data</em></li>
+      <li>Clearing the app's storage in your Android device's <em>Settings &gt; Apps &gt; Prism &gt; Clear Storage</em></li>
+      <li>Uninstalling the application from your device</li>
+    </ul>
+
+    <h2>6. Children's Privacy (COPPA Compliance)</h2>
+    <p>Prism AI does not knowingly collect, request, or solicit personal information from children under the age of 13. If you believe that a child has provided us with personal information, please contact us immediately so we can promptly remove such data.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy periodically to reflect app improvements or regulatory updates. Any changes will be posted on this page with an updated effective date.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data privacy, please contact us at:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:nomaankhannfs2@gmail.com">nomaankhannfs2@gmail.com</a></li>
+      <li><strong>Developer:</strong> Prism Team (Virus Boss)</li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2026 Prism AI. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
